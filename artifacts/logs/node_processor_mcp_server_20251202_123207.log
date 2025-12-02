@@ -146,3 +146,9 @@ openai.NotFoundError: Error code: 404 - {'error': {'code': '404', 'message': 'Re
 2025-12-02 15:54:17,574 - node-processor - INFO - FigmaUtil downloading image from https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/865b93da-d7ae-43a8-9e82-5b45baf6885e
 2025-12-02 15:54:18,172 - node-processor - INFO - FigmaUtil image saved to /workspace/demo/artifacts/layout-components/component_sets/component_2615_207707.jpg
 2025-12-02 15:54:18,173 - node-processor - INFO - [json_extraction] Success for node_id=2615-207707
+2025-12-02 15:54:39,185 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-12-02 15:54:39,185 - node-processor - INFO - [minimize_json] Starting for node_id=2615-207707, session_id=207707
+2025-12-02 15:54:39,185 - node-processor - INFO - MinimizeJson(name='JSON Minimization') getting component JSON for node 2615_207707
+2025-12-02 15:54:39,185 - node-processor - INFO - MinimizeJson(name='JSON Minimization') creating minimal component JSON for node 2615_207707
+2025-12-02 15:54:39,186 - node-processor - INFO - MinimizeJson(name='JSON Minimization') saving minimal component JSON for node 2615_207707 to /workspace/demo/artifacts/layout-components/component_sets/component_2615_207707.json
+2025-12-02 15:54:39,186 - node-processor - INFO - [minimize_json] Success for node_id=2615-207707
