@@ -152,3 +152,7 @@ openai.NotFoundError: Error code: 404 - {'error': {'code': '404', 'message': 'Re
 2025-12-02 15:54:39,185 - node-processor - INFO - MinimizeJson(name='JSON Minimization') creating minimal component JSON for node 2615_207707
 2025-12-02 15:54:39,186 - node-processor - INFO - MinimizeJson(name='JSON Minimization') saving minimal component JSON for node 2615_207707 to /workspace/demo/artifacts/layout-components/component_sets/component_2615_207707.json
 2025-12-02 15:54:39,186 - node-processor - INFO - [minimize_json] Success for node_id=2615-207707
+2025-12-02 15:54:51,413 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-12-02 15:54:51,414 - node-processor - INFO - [fix_colors] Starting for node_id=2615-207707, session_id=207707
+2025-12-02 15:54:51,414 - node-processor - INFO - FixColors(name='Fix Colors') fixing colors for /workspace/demo/artifacts/layout-components/component_sets/component_2615_207707.json
+2025-12-02 15:54:51,415 - node-processor - INFO - [fix_colors] Success for node_id=2615-207707

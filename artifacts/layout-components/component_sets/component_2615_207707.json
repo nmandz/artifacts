@@ -1,1 +1,241 @@
-{"name":"Vertical Farming Control Panel (Copy)","nodes":{"2615:207707":{"name":"Frame 9","type":"COMPONENT_SET","id":"2615:207707","fills":[],"strokes":[{"blendMode":"NORMAL","type":"SOLID","color":{"r":0.5921568870544434,"g":0.27843138575553894,"b":1.0,"a":1.0}}],"backgroundColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},"blendMode":"PASS_THROUGH","itemSpacing":10.0,"layoutMode":"VERTICAL","layoutAlign":"INHERIT","layoutGrow":0.0,"layoutSizingHorizontal":"FIXED","layoutSizingVertical":"HUG","absoluteBoundingBox":{"x":22825.0,"y":14868.0,"width":296.0,"height":32.0},"constraints":{"vertical":"TOP","horizontal":"LEFT"},"cornerRadius":5.0,"strokeWeight":1.0,"strokeAlign":"INSIDE","effects":[],"scrollBehavior":"SCROLLS","interactions":[],"clipsContent":true,"children":[{"name":"generation-block=Default","type":"COMPONENT","id":"2615:207706","fills":[],"strokes":[],"backgroundColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},"blendMode":"PASS_THROUGH","itemSpacing":8.0,"layoutMode":"HORIZONTAL","counterAxisAlignItems":"CENTER","layoutAlign":"STRETCH","layoutGrow":0.0,"layoutSizingHorizontal":"FILL","layoutSizingVertical":"HUG","absoluteBoundingBox":{"x":22825.0,"y":14868.0,"width":296.0,"height":32.0},"constraints":{"vertical":"TOP","horizontal":"LEFT"},"strokeWeight":1.0,"strokeAlign":"INSIDE","effects":[],"scrollBehavior":"SCROLLS","interactions":[],"clipsContent":false,"children":[{"name":"Auto-added frame","type":"FRAME","id":"2615:207066","fills":[],"strokes":[],"backgroundColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},"blendMode":"PASS_THROUGH","itemSpacing":10.0,"layoutMode":"HORIZONTAL","counterAxisAlignItems":"CENTER","layoutAlign":"INHERIT","layoutGrow":0.0,"layoutSizingHorizontal":"HUG","layoutSizingVertical":"FIXED","absoluteBoundingBox":{"x":22825.0,"y":14868.0,"width":20.0,"height":32.0},"constraints":{"vertical":"TOP","horizontal":"LEFT"},"strokeWeight":1.0,"strokeAlign":"INSIDE","effects":[],"scrollBehavior":"SCROLLS","interactions":[],"clipsContent":true,"children":[{"name":"ArrowForward","type":"FRAME","id":"2615:207067","fills":[{"blendMode":"NORMAL","visible":false,"type":"SOLID","color":{"r":1.0,"g":1.0,"b":1.0,"a":1.0}}],"strokes":[],"backgroundColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},"blendMode":"PASS_THROUGH","layoutAlign":"INHERIT","layoutGrow":0.0,"layoutSizingHorizontal":"FIXED","layoutSizingVertical":"FIXED","absoluteBoundingBox":{"x":22825.0,"y":14874.0,"width":20.0,"height":20.0},"constraints":{"vertical":"TOP","horizontal":"LEFT"},"strokeWeight":1.0,"strokeAlign":"INSIDE","effects":[],"scrollBehavior":"SCROLLS","interactions":[],"clipsContent":true,"children":[{"name":"Vector","type":"VECTOR","id":"2615:207068","fills":[{"blendMode":"NORMAL","type":"SOLID","color":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}],"strokes":[],"blendMode":"PASS_THROUGH","absoluteBoundingBox":{"x":22828.332682609558,"y":14877.3330078125,"width":13.333333015441895,"height":13.333333015441895},"constraints":{"vertical":"SCALE","horizontal":"SCALE"},"strokeWeight":1.0,"strokeAlign":"INSIDE","effects":[],"scrollBehavior":"SCROLLS","interactions":[]}]}]},{"name":"Container Dashboard / farm-container-04","type":"TEXT","id":"2615:207069","fills":[{"blendMode":"NORMAL","type":"SOLID","color":{"r":0.0,"g":0.0,"b":0.0,"a":1.0},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:97d1221fb84d8487fef37824784e8041404e2e9a/6:9"}}}],"strokes":[],"blendMode":"PASS_THROUGH","layoutAlign":"INHERIT","layoutGrow":0.0,"layoutSizingHorizontal":"HUG","layoutSizingVertical":"HUG","absoluteBoundingBox":{"x":22853.0,"y":14870.0,"width":256.0,"height":28.0},"constraints":{"vertical":"TOP","horizontal":"LEFT"},"characters":"Container Dashboard / farm-container-04","lineTypes":["NONE"],"lineIndentations":[0],"strokeWeight":1.0,"strokeAlign":"OUTSIDE","effects":[],"style":{"fontFamily":"Roboto","fontPostScriptName":"Roboto-Bold","fontStyle":"Bold","fontWeight":700,"textAutoResize":"WIDTH_AND_HEIGHT","fontSize":14.0,"textAlignHorizontal":"LEFT","textAlignVertical":"CENTER","letterSpacing":0.0,"lineHeightPx":28.0,"lineHeightPercent":170.6666717529297,"lineHeightPercentFontSize":200.0,"lineHeightUnit":"PIXELS"},"scrollBehavior":"SCROLLS","interactions":[]}]}]}}}
+{
+  "name": "Vertical Farming Control Panel (Copy)",
+  "nodes": {
+    "2615:207707": {
+      "name": "Frame 9",
+      "type": "COMPONENT_SET",
+      "id": "2615:207707",
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": "#9747FF"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "blendMode": "PASS_THROUGH",
+      "itemSpacing": 10.0,
+      "layoutMode": "VERTICAL",
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0.0,
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "HUG",
+      "absoluteBoundingBox": {
+        "x": 22825.0,
+        "y": 14868.0,
+        "width": 296.0,
+        "height": 32.0
+      },
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "cornerRadius": 5.0,
+      "strokeWeight": 1.0,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "scrollBehavior": "SCROLLS",
+      "interactions": [],
+      "clipsContent": true,
+      "children": [
+        {
+          "name": "generation-block=Default",
+          "type": "COMPONENT",
+          "id": "2615:207706",
+          "fills": [],
+          "strokes": [],
+          "backgroundColor": "#000000",
+          "blendMode": "PASS_THROUGH",
+          "itemSpacing": 8.0,
+          "layoutMode": "HORIZONTAL",
+          "counterAxisAlignItems": "CENTER",
+          "layoutAlign": "STRETCH",
+          "layoutGrow": 0.0,
+          "layoutSizingHorizontal": "FILL",
+          "layoutSizingVertical": "HUG",
+          "absoluteBoundingBox": {
+            "x": 22825.0,
+            "y": 14868.0,
+            "width": 296.0,
+            "height": 32.0
+          },
+          "constraints": {
+            "vertical": "TOP",
+            "horizontal": "LEFT"
+          },
+          "strokeWeight": 1.0,
+          "strokeAlign": "INSIDE",
+          "effects": [],
+          "scrollBehavior": "SCROLLS",
+          "interactions": [],
+          "clipsContent": false,
+          "children": [
+            {
+              "name": "Auto-added frame",
+              "type": "FRAME",
+              "id": "2615:207066",
+              "fills": [],
+              "strokes": [],
+              "backgroundColor": "#000000",
+              "blendMode": "PASS_THROUGH",
+              "itemSpacing": 10.0,
+              "layoutMode": "HORIZONTAL",
+              "counterAxisAlignItems": "CENTER",
+              "layoutAlign": "INHERIT",
+              "layoutGrow": 0.0,
+              "layoutSizingHorizontal": "HUG",
+              "layoutSizingVertical": "FIXED",
+              "absoluteBoundingBox": {
+                "x": 22825.0,
+                "y": 14868.0,
+                "width": 20.0,
+                "height": 32.0
+              },
+              "constraints": {
+                "vertical": "TOP",
+                "horizontal": "LEFT"
+              },
+              "strokeWeight": 1.0,
+              "strokeAlign": "INSIDE",
+              "effects": [],
+              "scrollBehavior": "SCROLLS",
+              "interactions": [],
+              "clipsContent": true,
+              "children": [
+                {
+                  "name": "ArrowForward",
+                  "type": "FRAME",
+                  "id": "2615:207067",
+                  "fills": [
+                    {
+                      "blendMode": "NORMAL",
+                      "visible": false,
+                      "type": "SOLID",
+                      "color": "#FFFFFF"
+                    }
+                  ],
+                  "strokes": [],
+                  "backgroundColor": "#000000",
+                  "blendMode": "PASS_THROUGH",
+                  "layoutAlign": "INHERIT",
+                  "layoutGrow": 0.0,
+                  "layoutSizingHorizontal": "FIXED",
+                  "layoutSizingVertical": "FIXED",
+                  "absoluteBoundingBox": {
+                    "x": 22825.0,
+                    "y": 14874.0,
+                    "width": 20.0,
+                    "height": 20.0
+                  },
+                  "constraints": {
+                    "vertical": "TOP",
+                    "horizontal": "LEFT"
+                  },
+                  "strokeWeight": 1.0,
+                  "strokeAlign": "INSIDE",
+                  "effects": [],
+                  "scrollBehavior": "SCROLLS",
+                  "interactions": [],
+                  "clipsContent": true,
+                  "children": [
+                    {
+                      "name": "Vector",
+                      "type": "VECTOR",
+                      "id": "2615:207068",
+                      "fills": [
+                        {
+                          "blendMode": "NORMAL",
+                          "type": "SOLID",
+                          "color": "#000000"
+                        }
+                      ],
+                      "strokes": [],
+                      "blendMode": "PASS_THROUGH",
+                      "absoluteBoundingBox": {
+                        "x": 22828.332682609558,
+                        "y": 14877.3330078125,
+                        "width": 13.333333015441895,
+                        "height": 13.333333015441895
+                      },
+                      "constraints": {
+                        "vertical": "SCALE",
+                        "horizontal": "SCALE"
+                      },
+                      "strokeWeight": 1.0,
+                      "strokeAlign": "INSIDE",
+                      "effects": [],
+                      "scrollBehavior": "SCROLLS",
+                      "interactions": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Container Dashboard / farm-container-04",
+              "type": "TEXT",
+              "id": "2615:207069",
+              "fills": [
+                {
+                  "blendMode": "NORMAL",
+                  "type": "SOLID",
+                  "color": "#000000",
+                  "boundVariables": {
+                    "color": {
+                      "type": "VARIABLE_ALIAS",
+                      "id": "VariableID:97d1221fb84d8487fef37824784e8041404e2e9a/6:9"
+                    }
+                  }
+                }
+              ],
+              "strokes": [],
+              "blendMode": "PASS_THROUGH",
+              "layoutAlign": "INHERIT",
+              "layoutGrow": 0.0,
+              "layoutSizingHorizontal": "HUG",
+              "layoutSizingVertical": "HUG",
+              "absoluteBoundingBox": {
+                "x": 22853.0,
+                "y": 14870.0,
+                "width": 256.0,
+                "height": 28.0
+              },
+              "constraints": {
+                "vertical": "TOP",
+                "horizontal": "LEFT"
+              },
+              "characters": "Container Dashboard / farm-container-04",
+              "lineTypes": [
+                "NONE"
+              ],
+              "lineIndentations": [
+                0
+              ],
+              "strokeWeight": 1.0,
+              "strokeAlign": "OUTSIDE",
+              "effects": [],
+              "style": {
+                "fontFamily": "Roboto",
+                "fontPostScriptName": "Roboto-Bold",
+                "fontStyle": "Bold",
+                "fontWeight": 700,
+                "textAutoResize": "WIDTH_AND_HEIGHT",
+                "fontSize": 14.0,
+                "textAlignHorizontal": "LEFT",
+                "textAlignVertical": "CENTER",
+                "letterSpacing": 0.0,
+                "lineHeightPx": 28.0,
+                "lineHeightPercent": 170.6666717529297,
+                "lineHeightPercentFontSize": 200.0,
+                "lineHeightUnit": "PIXELS"
+              },
+              "scrollBehavior": "SCROLLS",
+              "interactions": []
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
