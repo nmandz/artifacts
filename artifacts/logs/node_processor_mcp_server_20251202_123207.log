@@ -1,0 +1,148 @@
+2025-12-02 12:32:07,090 - node_processor_mcp_server - WARNING - Artifacts repo init skipped: BaseMCPServer.ensure_artifacts_repo() missing 1 required positional argument: 'session_id'
+2025-12-02 12:32:07,131 - node-processor - INFO - Starting Node Processor MCP server...
+2025-12-02 12:32:07,131 - node_processor_mcp_server - INFO - Starting Node Processor MCP with transport=$(mcp_transport) host=0.0.0.0 port=8080
+2025-12-02 13:48:41,042 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-12-02 13:49:28,209 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-12-02 13:49:54,473 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourceTemplatesRequest
+2025-12-02 13:49:54,579 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-12-02 13:50:26,575 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-12-02 13:50:31,748 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourceTemplatesRequest
+2025-12-02 13:50:31,780 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-12-02 13:54:09,602 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-12-02 13:54:09,604 - generation_commons.openai_util.OpenAIUtil - INFO - Initializing OpenAIUtil with model: gpt-4o, endpoint: https://cog-az-swc-dev-genai-openai01.openai.azure.com/openai
+2025-12-02 13:54:09,658 - generation_commons.openai_util.OpenAIUtil - INFO - Successfully initialized Azure OpenAI client
+2025-12-02 13:54:09,658 - node-processor - INFO - [json_extraction] Starting for node_id=<node id>, session_id=
+2025-12-02 13:54:09,658 - node-processor - INFO - JsonExtraction(name='JSON Extraction') checking configuration
+2025-12-02 13:54:09,658 - node-processor - INFO - JsonExtraction(name='JSON Extraction') creating output directory
+2025-12-02 13:54:09,658 - node-processor - INFO - JsonExtraction(name='JSON Extraction') fetching node from Figma
+2025-12-02 13:54:09,658 - node-processor - INFO - JsonExtraction(name='JSON Extraction') downloading component JSON for node <node id> from Figma
+2025-12-02 13:54:10,724 - node-processor - ERROR - [json_extraction] Error for node_id=<node id>: 400 Client Error: Bad Request for url: https://api.figma.com/v1/files/TrVH69CQKbrsr9jMktKGJ4/nodes?ids=%3Cnode+id%3E
+Traceback (most recent call last):
+  File "/workspace/component_generation/node_processor_mcp/server.py", line 152, in json_extraction
+    ).execute(node_id=node_id, clean_node_id=self.clean_node_id(node_id))
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/component_generation/node_processor_mcp/steps/JsonExtraction.py", line 30, in execute
+    self._fetch_node(clean_node_id, node_id)
+  File "/workspace/component_generation/node_processor_mcp/steps/JsonExtraction.py", line 50, in _fetch_node
+    result = self._figma_util.get_file(node_id) # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/shared/generation_commons/figma_tools/FigmaUtil.py", line 37, in get_file
+    response.raise_for_status()
+  File "/usr/local/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.figma.com/v1/files/TrVH69CQKbrsr9jMktKGJ4/nodes?ids=%3Cnode+id%3E
+
+2025-12-02 13:54:53,734 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-12-02 13:54:53,734 - generation_commons.openai_util.OpenAIUtil - INFO - Initializing OpenAIUtil with model: gpt-4o, endpoint: https://cog-az-swc-dev-genai-openai01.openai.azure.com/openai
+2025-12-02 13:54:53,742 - generation_commons.openai_util.OpenAIUtil - INFO - Successfully initialized Azure OpenAI client
+2025-12-02 13:54:53,742 - node-processor - INFO - [json_extraction] Starting for node_id=2615-207707, session_id=
+2025-12-02 13:54:53,742 - node-processor - INFO - JsonExtraction(name='JSON Extraction') checking configuration
+2025-12-02 13:54:53,742 - node-processor - INFO - JsonExtraction(name='JSON Extraction') creating output directory
+2025-12-02 13:54:53,742 - node-processor - INFO - JsonExtraction(name='JSON Extraction') fetching node from Figma
+2025-12-02 13:54:53,742 - node-processor - INFO - JsonExtraction(name='JSON Extraction') downloading component JSON for node 2615_207707 from Figma
+2025-12-02 13:54:56,735 - node-processor - INFO - JsonExtraction(name='JSON Extraction') saved component JSON for node 2615_207707 to file /workspace/demo/artifacts/layout-components/component_sets/component_2615_207707.json
+2025-12-02 13:54:56,736 - node-processor - INFO - JsonExtraction(name='JSON Extraction') downloading component image for node 2615_207707 from Figma
+2025-12-02 13:54:56,736 - node-processor - INFO - FigmaUtil fetching Figma image for node(s) 2615-207707
+2025-12-02 13:54:59,288 - node-processor - INFO - FigmaUtil downloading image from https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/865b93da-d7ae-43a8-9e82-5b45baf6885e
+2025-12-02 13:55:00,023 - node-processor - INFO - FigmaUtil image saved to /workspace/demo/artifacts/layout-components/component_sets/component_2615_207707.jpg
+2025-12-02 13:55:00,025 - node-processor - INFO - [json_extraction] Success for node_id=2615-207707
+2025-12-02 13:55:00,025 - node_processor_mcp_server - WARNING - commit_artifacts failed: 'NodeProcessorMCPServer' object has no attribute 'session_id'
+2025-12-02 13:55:09,515 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-12-02 13:55:09,515 - node-processor - INFO - [minimize_json] Starting for node_id=2615-207707, session_id=
+2025-12-02 13:55:09,515 - node-processor - INFO - MinimizeJson(name='JSON Minimization') getting component JSON for node 2615_207707
+2025-12-02 13:55:09,515 - node-processor - INFO - MinimizeJson(name='JSON Minimization') creating minimal component JSON for node 2615_207707
+2025-12-02 13:55:09,516 - node-processor - INFO - MinimizeJson(name='JSON Minimization') saving minimal component JSON for node 2615_207707 to /workspace/demo/artifacts/layout-components/component_sets/component_2615_207707.json
+2025-12-02 13:55:09,516 - node-processor - INFO - [minimize_json] Success for node_id=2615-207707
+2025-12-02 13:55:09,516 - node_processor_mcp_server - WARNING - commit_artifacts failed: 'NodeProcessorMCPServer' object has no attribute 'session_id'
+2025-12-02 13:55:17,675 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-12-02 13:55:17,675 - node-processor - INFO - [fix_colors] Starting for node_id=2615-207707, session_id=
+2025-12-02 13:55:17,676 - node-processor - INFO - FixColors(name='Fix Colors') fixing colors for /workspace/demo/artifacts/layout-components/component_sets/component_2615_207707.json
+2025-12-02 13:55:17,676 - node-processor - INFO - [fix_colors] Success for node_id=2615-207707
+2025-12-02 13:55:17,677 - node_processor_mcp_server - WARNING - commit_artifacts failed: 'NodeProcessorMCPServer' object has no attribute 'session_id'
+2025-12-02 13:55:38,243 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-12-02 13:55:38,243 - node-processor - INFO - [generate_styled_structure] Starting for node_id=2615-207707, session_id=
+2025-12-02 13:55:38,243 - node-processor - INFO - GenerateStyledStructure(name='Generate Styled Structure') loading component file for node 2615_207707
+2025-12-02 13:55:38,244 - node-processor - INFO - GenerateStyledStructure(name='Generate Styled Structure')  generating styled structure for node 2615_207707
+2025-12-02 13:55:38,244 - generation_commons.openai_util.OpenAIUtil - INFO - Starting OpenAI completion request with model: gpt-4o
+2025-12-02 13:55:38,244 - generation_commons.openai_util.OpenAIUtil - INFO - System message preview: # Figma JSON to Styled Markdown Converter
+
+You are a Figma JSON to Markdown documentation specialist. Your task is to convert Figma component JSON files into comprehensive styled markdown documentatio...
+2025-12-02 13:55:38,244 - generation_commons.openai_util.OpenAIUtil - INFO - User message preview: {
+  "name": "Vertical Farming Control Panel (Copy)",
+  "nodes": {
+    "2615:207707": {
+      "name": "Frame 9",
+      "type": "COMPONENT_SET",
+      "id": "2615:207707",
+      "fills": [],
+      "stro...
+2025-12-02 13:55:38,244 - generation_commons.openai_util.OpenAIUtil - INFO - Message lengths - System: 11451, User: 7823
+2025-12-02 13:55:38,709 - httpx - INFO - HTTP Request: POST https://cog-az-swc-dev-genai-openai01.openai.azure.com/openai/openai/deployments/gpt-4o/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 404 Resource Not Found"
+2025-12-02 13:55:38,716 - generation_commons.openai_util.OpenAIUtil - ERROR - OpenAI completion failed after 0.47s: Error code: 404 - {'error': {'code': '404', 'message': 'Resource not found'}}
+Traceback (most recent call last):
+  File "/workspace/shared/generation_commons/openai_util/OpenAIUtil.py", line 59, in complete
+    response = self._client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/openai/resources/chat/completions/completions.py", line 1189, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'code': '404', 'message': 'Resource not found'}}
+
+2025-12-02 13:55:38,716 - generation_commons.openai_util.OpenAIUtil - ERROR - Model: gpt-4o, Endpoint: https://cog-az-swc-dev-genai-openai01.openai.azure.com/openai
+2025-12-02 13:55:38,717 - node-processor - ERROR - [generate_styled_structure] Error for node_id=2615-207707: Error code: 404 - {'error': {'code': '404', 'message': 'Resource not found'}}
+Traceback (most recent call last):
+  File "/workspace/component_generation/node_processor_mcp/server.py", line 220, in generate_styled_structure
+    ).execute(node_id=node_id, clean_node_id=self.clean_node_id(node_id))
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/component_generation/node_processor_mcp/steps/GenerateStyledStructure.py", line 39, in execute
+    response = self._openai_util.complete(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/shared/generation_commons/openai_util/OpenAIUtil.py", line 59, in complete
+    response = self._client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/openai/resources/chat/completions/completions.py", line 1189, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'code': '404', 'message': 'Resource not found'}}
+
+2025-12-02 15:17:37,873 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-12-02 15:17:53,576 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-12-02 15:17:53,577 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourceTemplatesRequest
+2025-12-02 15:39:11,844 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-12-02 15:39:14,806 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourceTemplatesRequest
+2025-12-02 15:39:14,806 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-12-02 15:50:04,884 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-12-02 15:50:26,474 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourceTemplatesRequest
+2025-12-02 15:50:26,475 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-12-02 15:50:40,801 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-12-02 15:51:48,137 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-12-02 15:53:04,023 - root - WARNING - Failed to validate request: Received request before initialization was complete
+2025-12-02 15:53:20,376 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-12-02 15:54:15,992 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-12-02 15:54:15,992 - node-processor - INFO - [json_extraction] Starting for node_id=2615-207707, session_id=207707
+2025-12-02 15:54:15,992 - node-processor - INFO - JsonExtraction(name='JSON Extraction') checking configuration
+2025-12-02 15:54:15,992 - node-processor - INFO - JsonExtraction(name='JSON Extraction') creating output directory
+2025-12-02 15:54:15,993 - node-processor - INFO - JsonExtraction(name='JSON Extraction') fetching node from Figma
+2025-12-02 15:54:15,993 - node-processor - INFO - JsonExtraction(name='JSON Extraction') downloading component JSON for node 2615_207707 from Figma
+2025-12-02 15:54:17,041 - node-processor - INFO - JsonExtraction(name='JSON Extraction') saved component JSON for node 2615_207707 to file /workspace/demo/artifacts/layout-components/component_sets/component_2615_207707.json
+2025-12-02 15:54:17,041 - node-processor - INFO - JsonExtraction(name='JSON Extraction') downloading component image for node 2615_207707 from Figma
+2025-12-02 15:54:17,042 - node-processor - INFO - FigmaUtil fetching Figma image for node(s) 2615-207707
+2025-12-02 15:54:17,574 - node-processor - INFO - FigmaUtil downloading image from https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/865b93da-d7ae-43a8-9e82-5b45baf6885e
+2025-12-02 15:54:18,172 - node-processor - INFO - FigmaUtil image saved to /workspace/demo/artifacts/layout-components/component_sets/component_2615_207707.jpg
+2025-12-02 15:54:18,173 - node-processor - INFO - [json_extraction] Success for node_id=2615-207707
